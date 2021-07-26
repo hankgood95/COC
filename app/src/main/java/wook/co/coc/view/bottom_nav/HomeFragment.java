@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Log.i(TAG,"onCreatView");
 
+        //layoyt 불러와서 해당 layout inflate 시켜서 view create 한다.
         view = inflater.inflate(R.layout.mainpage_mainpage,container,false);
         return view;
     }

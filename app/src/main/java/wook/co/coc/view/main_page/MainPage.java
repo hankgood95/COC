@@ -2,7 +2,6 @@ package wook.co.coc.view.main_page;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -22,12 +21,12 @@ public class MainPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainpage_mainpage_container);
+        setContentView(R.layout.bottomnav_container);
 
         //바텀 네비게이션 객체를 받아옴
         btnv = findViewById(R.id.bottonNav);
 
-        //Fragment매니저를 불러와서 mainpage_mainpage_container.xml안에 Fragment들을 겹쳐서 보여줄 FrameLayout에 HomeFragment를 연결해서 화면에 띄움
+        //Fragment매니저를 불러와서 bottomnav_container.xml안에 Fragment들을 겹쳐서 보여줄 FrameLayout에 HomeFragment를 연결해서 화면에 띄움
         getSupportFragmentManager().beginTransaction().add(R.id.main_frame,new HomeFragment()).commit();
 
         //바텀 네비게이션에서 아이템이 클릭됐을때의 리스너를 설정함

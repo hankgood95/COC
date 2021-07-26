@@ -15,7 +15,7 @@ import wook.co.coc.R;
 public class MyPageFragment extends Fragment {
 
     private View view;
-    private String TAG = "MMyPageFragment";
+    private String TAG = "MyPageFragment";
 
     @Nullable
     @Override

@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-
     <Button
         android:id="@+id/hot_cafe"
         android:layout_width="wrap_content"
@@ -16,14 +15,4 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/hot_cafe"
         android:text="카페 검색하기"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="#fff"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_nav"/>
-
 </RelativeLayout>

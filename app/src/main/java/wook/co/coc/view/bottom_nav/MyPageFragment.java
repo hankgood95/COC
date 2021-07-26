@@ -15,8 +15,9 @@ import wook.co.coc.R;
 public class MyPageFragment extends Fragment {
 
     private View view;
-    private String TAG = "MMyPageFragment";
+    private String TAG = "MyPageFragment";
 
+    //만든 layout inflate해서 View 객체를 얻어옴
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

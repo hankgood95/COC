@@ -46,7 +46,6 @@ public class HomeFragment extends Fragment {
         hotCafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onPause();
                 transaction.replace(R.id.main_frame,new CafeInfoFrag());
                 transaction.commit();
             }

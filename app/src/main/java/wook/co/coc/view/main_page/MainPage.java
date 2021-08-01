@@ -26,9 +26,6 @@ public class MainPage extends AppCompatActivity {
     private FragmentManager manager; //FragmentManger 객체
     private FragmentTransaction transaction; //FragmentTransaction 객체 변수
 
-    private long backPressedTime = 0;
-    private final long FINISH_INTERVAL_TIME = 2000;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +66,7 @@ public class MainPage extends AppCompatActivity {
                         break;
                 }
                 transaction.commit();
+                Log.i("BackStack Count ",Integer.toString(manager.getBackStackEntryCount()));
                 return true;
             }
         });
@@ -79,7 +77,6 @@ public class MainPage extends AppCompatActivity {
         super.onBackPressed();
         //바텀네비게이션이 바뀌어야 한다.
         updateBottomNav(btnv);
-
     }
 
     //Fragment가 변경될때 여길 들어옴

@@ -46,10 +46,9 @@ public class HomeFragment extends Fragment {
         hotCafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"핫한카페버튼 눌러짐",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"이거 클릭했는데 그건 나중에 하자",Toast.LENGTH_SHORT).show();
             }
         });
-
         return view;
     }
 }

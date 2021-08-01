@@ -40,7 +40,7 @@ public class MainPage extends AppCompatActivity {
         transaction = manager.beginTransaction();
 
         //Fragment매니저를 불러와서 bottomnav_container.xml안에 Fragment들을 겹쳐서 보여줄 FrameLayout에 HomeFragment를 연결해서 화면에 띄움
-        transaction.add(R.id.main_frame,new HomeFragment(),"home");
+        transaction.replace(R.id.main_frame,new HomeFragment(),"home");
         transaction.commit();
 
         //바텀 네비게이션에서 아이템이 클릭됐을때의 리스너를 설정함

@@ -5,13 +5,16 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
+    <fragment
+        android:id="@+id/botnav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/main_frame"/>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/botnav_graph"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottonNav"
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -19,5 +22,5 @@
         android:background="#fff"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav"/>
-    
+
 </RelativeLayout>
